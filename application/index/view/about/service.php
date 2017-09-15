@@ -1,17 +1,4 @@
-
-<DIV class="yxzj_tuishou">
-<div class="yxzj_banner5"><img src="__STATIC__/images/1X1PNG.png" width="1200" height="275" /></div>
-
-<div class="about">
-<div class="about_left">
-<ul>
-<li><a href="/about/">关于未来</a></li>
-<li><a href="/about/service/" class="hover">客户服务</a></li>
-<li><a href="/about/law/">法律声明</a></li>
-<li><a href="/about/job/">招贤纳士</a></li>
-<li><a href="/about/contact/">联系我们</a></li>
-</ul>
-</div>
+{include file="layout/about_nav"}
 <div class="about_right">
 <div class="about_title">
 <dl style="text-align:center; padding-left:0;">

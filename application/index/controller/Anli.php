@@ -2,48 +2,50 @@
 
 namespace app\index\controller;
 
+use app\common\model\Ad;
+use app\common\model\CateAnli;
+use app\common\model\Func;
 use think\Controller;
+use think\Request;
 
-class Anli extends Controller
-{
-    public function index()
-    {
-
-        return $this->fetch();
+class Anli extends Controller {
+    public function __construct(Request $request = null) {
+        parent::__construct($request);
+        $row_ad = Ad::getAdByPosition(4);
+        $this->assign(['row_ad' => $row_ad]);
     }
 
-    public function yingxiao()
-    {
+    public function index(Request $request) {
+        $data = $request->param();
+        $list_cate_anli = CateAnli::getList(['paixu' => 'sort']);
+        if (!empty($data['cate_anli_id'])) {
 
-        return $this->fetch();
+            $cate_anli_id = $data['cate_anli_id'];
+        } else {
+            $cate_anli_id = 0;
+        }
+        $list_anli = \app\common\model\Anli::getList(['paixu' => 'sort', 'cate_anli_id' => $cate_anli_id]);
+
+        if (count($list_anli) == 0) {
+            $this->error('暂无数据');
+        }
+        foreach ($list_anli as $k => $row_) {
+            $list_anli[$k]->func_ids = explode(',', $row_->func_ids);
+        }
+
+        $list_func = Func::getList();
+        //dump($list_anli);exit;
+        return $this->fetch('', compact('list_anli', 'list_func','list_cate_anli'));
     }
 
-    public function tuoguan()
-    {
-        return $this->fetch();
-    }
-
-    public function guanjia()
-    {
-        return $this->fetch();
-    }
-
-    public function website()
-    {
-        return $this->fetch();
-    }
-
-    public function app()
-    {
-        return $this->fetch();
-    }
-
-    public function qyy()
-    {
-        //用自己的布局
-        $this->view->engine->layout('layout/qyy');
-        return $this->fetch();
-    }
+   public function read(Request $request){
+        $data = $request->param();
+        $row_anli = \app\common\model\Anli::getOne($data['anli_id']);
+        if(!$row_anli){
+            $this->error('暂无数据');
+        }
+       return $this->fetch('', compact('row_anli'));
+   }
 
 
 }

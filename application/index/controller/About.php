@@ -2,14 +2,23 @@
 
 namespace app\index\controller;
 
+use app\common\model\Ad;
+use app\common\model\Recruit;
 use think\Controller;
+use think\Request;
 
 class About extends Controller
 {
+    public function __construct(Request $request = null) {
+        parent::__construct($request);
+        $row_ad = Ad::getAdByPosition(5);
+        $this->assign(['row_ad'=>$row_ad]);
+    }
+
     public function index()
     {
-
-        return $this->fetch();
+       // $row_ad = Ad::getAdByPosition(5);
+        return $this->fetch('');
     }
 
     public function service()
@@ -25,7 +34,8 @@ class About extends Controller
 
     public function job()
     {
-        return $this->fetch();
+        $list_recruit=Recruit::getList([],['st'=>1]);
+        return $this->fetch('',['list_recruit'=>$list_recruit]);
     }
 
     public function contact()

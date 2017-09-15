@@ -11,7 +11,7 @@
         <meta name=“viewport” content=“width=device-width; initial-scale=1.0”>
         <link rel="stylesheet" href="__STATIC__/css/weilaihexun.css">
         <link type="text/css" rel="stylesheet" href="__STATIC__/css/slicebox.css">
-        <script src="__STATIC__/js/jQuery.js"></script>
+        <script src="__STATIC__js/jquery.js"></script>
         <script type="text/javascript" src="__STATIC__/js/modernizr.custom.46884.js"></script>
         <script type="text/javascript" src="__STATIC__/js/jquery.slicebox.js"></script>
         <script src="__STATIC__/js/index.js"></script>
@@ -25,30 +25,19 @@
     <div class="foot wrapper">
         <div class="left-foot">
             <ul class="company-info clearfix">
-                <li><a href="/about/profile/">公司简介</a></li>
-                <li><a href="/about/service/">客户服务</a></li>
-                <li><a href="/about/Llega/">法律声明</a></li>
-                <li><a href="/channel/">商务合作</a></li>
-                <li><a href="/about/contact/">联系我们</a></li>
-                <li><a href="/about/job/">加入我们</a></li>
+                <li><a href="{:url('about/index')}">公司简介</a></li>
+                <li><a href="{:url('about/service')}">客户服务</a></li>
+                <li><a href="{:url('about/law')}">法律声明</a></li>
+                <li><a href="{:url('channel/index')}">商务合作</a></li>
+                <li><a href="{:url('about/contact')}">联系我们</a></li>
+                <li><a href="{:url('about/job')}">加入我们</a></li>
             </ul>
             <ul class="friend-link clearfix">
                 <li>友情链接 :</li>
-                <li><a href='http://www.hzict.com' target='_blank'>昊泽信通</a></li>
-                <li><a href='http://www.sina.com.cn' target='_blank'>新浪网</a></li>
-                <li><a href='http://www.qingyy.net/' target='_blank'>轻应用商店</a></li>
-                <li><a href='http://www.163.com' target='_blank'>网易新闻</a></li>
-                <li><a href='http://www.qq.com' target='_blank'>腾讯</a></li>
-                <li><a href='http://www.mi.com' target='_blank'>小米网</a></li>
-                <li><a href='http://www.huxiu.com' target='_blank'>虎嗅网</a></li>
-                <li><a href='http://tool.chinaz.com/' target='_blank'>站长工具</a></li>
-                <li><a href='http://zhanzhang.baidu.com' target='_blank'>百度站长工具</a></li>
-                <li><a href='http://www.people.com.cn/' target='_blank'>人民网</a></li>
-                <li><a href='http://www.xinhuanet.com/' target='_blank'>新华网</a></li>
-                <li><a href='http://www.cctv.com/' target='_blank'>央视网</a></li>
-                <li><a href='http://www.china.com.cn/' target='_blank'>中国网</a></li>
-                <li><a href='http://www.pconline.com.cn/?ad=6347&360hot_site' target='_blank'>太平洋电脑</a></li>
-                <li><a href='http://www.autohome.com.cn/beijing/?pvareaid=100520' target='_blank'>汽车之家</a></li>
+                <?php foreach ($list_friend as $k=>$row_friend){?>
+                    <li><a href='{$row_friend->url}' target='_blank'>{$row_friend->name}</a></li>
+                <?php }?>
+
                 <li><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
                         document.write(unescape("%3Cspan id='cnzz_stat_icon_1261193868'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261193868%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
                 </li>

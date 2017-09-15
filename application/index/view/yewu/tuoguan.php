@@ -1,6 +1,6 @@
 
 <DIV class="yxzj_tuishou">
-    <div class="yxzj_banner1"><img src="__STATIC__images/1X1PNG.png" width="1200" height="345" /></div>
+    <div class=""><a <?= \app\common\model\Ad::urlOpen($row_ad->url,$row_ad->new_window)?>><img src="__IMGURL__/{$row_ad->img}" width="1200" height="450" /></a></div>
     <!--标题-->
     <div class="index_title">
         <dl>

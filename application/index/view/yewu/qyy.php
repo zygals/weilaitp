@@ -3,19 +3,23 @@
 <!--banner大图-->
 <div class="slide-wrap">
     <ul id="sb-slider" class="sb-slider">
-        <li>
-            <a href=""><img src="__STATIC__images/banner1.jpg" alt=""></a>
-            <div class="z-box">
-                <h2>轻应用联盟</h2>
-                <h4><span>轻轻的</span>改变世界</h4>
-                <img src="__STATIC__images/z-box.png" alt="">
-            </div>
-        </li>
-        <li>
-            <a href="">
-                <img src="__STATIC__images/banner3.jpg" alt="" class="banner2">
+<!--        <li>-->
+<!--            <a href=""><img src="__STATIC__images/banner1.jpg" alt=""></a>-->
+<!--            <div class="z-box">-->
+<!--                <h2>轻应用联盟</h2>-->
+<!--                <h4><span>轻轻的</span>改变世界</h4>-->
+<!--                <img src="__STATIC__images/z-box.png" alt="">-->
+<!--            </div>-->
+<!--        </li>-->
+        <?php foreach($list_ad as $row_){?>
+
+            <li>
+            <a <?= \app\common\model\Ad::urlOpen($row_->url,$row_->new_window)?>>
+                <img src="__IMGURL__{$row_->img}" alt="" class="">
             </a>
         </li>
+
+        <?php }?>
     </ul>
     <div>
     </div>
