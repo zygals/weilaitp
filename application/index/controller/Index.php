@@ -16,7 +16,7 @@ class Index extends Controller {
 
         $list_cate_anli = CateAnli::getList(['paixu' => 'sort']);
         if (empty($data['cate_anli_id'])) {
-            $cate_anli_id = $list_cate_anli[0]->id;
+            $cate_anli_id = count($list_cate_anli)>0?$list_cate_anli[0]->id:1;
         } else {
             $cate_anli_id = $data['cate_anli_id'];
 
