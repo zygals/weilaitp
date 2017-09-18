@@ -27,13 +27,13 @@
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="sName" class="col-xs-3 control-label">seo标题：</label>
+                            <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>seo标题：</label>
                             <div class="col-xs-8 ">
                                 <input type="text" class="form-control input-sm" name='title' value="" >
                             </div>
                         </div>
                         <div class="form-group " id="values" style="display: block;">
-                            <label for="sName" class="col-xs-3 control-label">seo关键词：</label>
+                            <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>seo关键词：</label>
                             <div class="col-xs-8 ">
                                 <textarea rows="4" cols="40" name="keywords"></textarea><br>
                                 <span style="color:red">多个词请用英文逗号隔开</span>
@@ -43,7 +43,7 @@
                             <label for="sName" class="col-xs-3 control-label">seo描述：</label>
                             <div class="col-xs-8 ">
                                 <textarea rows="5" cols="45"  name="description"></textarea><br>
-                                <span style="color:red">请用英文逗号隔开</span>
+<!--                                <span style="color:red">请用英文逗号隔开</span>-->
                             </div>
                         </div>
 
@@ -80,7 +80,7 @@
 
                     }
                 },
-                description: {
+        /*        description: {
                     validators: {
                         notEmpty: {
                             message: '不能为空'
@@ -88,7 +88,7 @@
 
 
                     }
-                },
+                },*/
                 nav_id: {
                     validators: {
                         notEmpty: {

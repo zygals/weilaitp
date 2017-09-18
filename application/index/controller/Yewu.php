@@ -2,14 +2,17 @@
 namespace app\index\controller;
 
 use app\common\model\Ad;
+use app\common\model\SeoSet;
 use think\Controller;
 
 class Yewu extends Controller
 {
     public function index()
     {
+
         $row_ad  = Ad::getAdByPosition(2);
-        return $this->fetch('',compact('row_ad'));
+        $seo = SeoSet::getSeoByNavId(2);
+        return $this->fetch('',compact('row_ad','seo'));
     }
   public function yingxiao(){
 

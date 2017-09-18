@@ -6,6 +6,7 @@ use app\common\model\Anli;
 use app\common\model\CateAnli;
 use app\common\model\Friend;
 use app\common\model\Func;
+use app\common\model\SeoSet;
 use think\Controller;
 use think\Request;
 
@@ -33,9 +34,8 @@ class Index extends Controller {
 
         $list_func = Func::getList();
         $list_friend_hezuo= Friend::getList(['type'=>2]);
-        //$list_friend= Friend::getList(['type'=>1]);
-
+        $seo = SeoSet::getSeoByNavId(1);
        //dump($list_friend_hezuo);
-        return $this->fetch('', compact('list_ad', 'list_cate_anli', 'list_anli', 'list_func','list_friend_hezuo'));
+        return $this->fetch('', compact('list_ad', 'list_cate_anli', 'list_anli', 'list_func','list_friend_hezuo','seo'));
     }
 }

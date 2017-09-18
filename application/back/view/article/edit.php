@@ -47,9 +47,10 @@
                         <div class="form-group ">
                             <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>标题：</label>
                             <div class="col-xs-8 ">
-                                <input type="text" class="form-control input-sm duiqi" name='name' value="{$row_->name}" id="" placeholder="">
+                                <input type="text" class="form-control input-sm" name='name' value="{$row_->name}" id="" placeholder="">
                             </div>
                         </div>
+
                         <div class="form-group" id="diliver_fee_wrap" style=";">
                             <label for="situation" class="col-xs-3 control-label">排序：</label>
                             <div class="col-xs-8">
@@ -60,7 +61,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="sOrd" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>列表图：</label>
+                            <label for="sOrd" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>缩略图：</label>
                                 <div class="col-xs-4 ">
                                     <img src="__IMGURL__{$row_->img}" alt="没有上传图片" width="188"/>
                                     <input type="file" title='' class="form-control  duiqi" id="sOrd" name="img" placeholder=""><span style="color:red">尺寸要求（240*140），大小不超过<?php echo floor(config('upload_size')/1024/1024);?>M。不选择表示不修改。</span>
@@ -72,7 +73,18 @@
                                 <textarea name="cont" id="desc_textarea" style="width:800px;height:400px;">{$row_->cont}</textarea>
                             </div>
                         </div>
-
+                        <div class="form-group ">
+                            <label for="sName" class="col-xs-3 control-label">关键字：</label>
+                            <div class="col-xs-8 ">
+                                <input type="text" class="form-control input-sm " name='keywords' value="{$row_->keywords}" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="sName" class="col-xs-3 control-label">描述：</label>
+                            <div class="col-xs-8 ">
+                                <textarea name="description" id="" cols="50" rows="5">{$row_->description}</textarea>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="situation" class="col-xs-3 control-label">首页推荐：</label>
                             <div class="col-xs-8">

@@ -5,6 +5,7 @@ namespace app\index\controller;
 use app\common\model\Ad;
 use app\common\model\CateAnli;
 use app\common\model\Func;
+use app\common\model\SeoSet;
 use think\Controller;
 use think\Request;
 
@@ -34,8 +35,9 @@ class Anli extends Controller {
         }
 
         $list_func = Func::getList();
+        $seo = SeoSet::getSeoByNavId(3);
         //dump($list_anli);exit;
-        return $this->fetch('', compact('list_anli', 'list_func','list_cate_anli'));
+        return $this->fetch('', compact('list_anli', 'list_func','list_cate_anli','seo'));
     }
 
    public function read(Request $request){
@@ -44,7 +46,12 @@ class Anli extends Controller {
         if(!$row_anli){
             $this->error('暂无数据');
         }
-       return $this->fetch('', compact('row_anli'));
+       $seo = (object)[
+           'title'=>$row_anli->name.'_'.$row_anli->cate_name.'_'.'品牌案例'.'_'.config('site_name'),
+           'keywords'=>$row_anli->keywords,
+           'description'=>$row_anli->description,
+       ];
+       return $this->fetch('', compact('row_anli','seo'));
    }
 
 

@@ -106,6 +106,18 @@
                                 <textarea name="cont" id="desc_textarea" style="width:800px;height:400px;">{$row_->cont|default=''}</textarea>
                             </div>
                         </div>
+                        <div class="form-group ">
+                            <label for="sName" class="col-xs-3 control-label">关键字：</label>
+                            <div class="col-xs-8 ">
+                                <input type="text" class="form-control input-sm " name='keywords' value="{$row_->keywords|default=''}" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="sName" class="col-xs-3 control-label">描述：</label>
+                            <div class="col-xs-8 ">
+                                <textarea name="description" id="" cols="50" rows="5">{$row_->description|default=''}</textarea>
+                            </div>
+                        </div>
 
                         <div class="form-group">
                             <label for="situation" class="col-xs-3 control-label">首页推荐：</label>

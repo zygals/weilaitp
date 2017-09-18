@@ -22,20 +22,20 @@
                         <label for="sKnot" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>导航名称：</label>
                         <div class="col-xs-8">
                             <select class=" form-control select-duiqi" name="nav_id">
-                                <?php foreach ($list_nav as $k=>$category){?>
-                                    <option <?php echo $category->id==$row_->nav_id?'selected':''?> value="{$category->id}">{$category->name}</option>
+                                <?php foreach ($list_nav as $k=>$row_nav){?>
+                                    <option <?php echo $row_nav->id==$row_->getData('nav_id')?'selected':''?> value="{$row_nav->id}">{$row_nav->name}</option>
                                 <?php }?>
                             </select>
                         </div>
                     </div>
                     <div class="form-group ">
-                        <label for="sName" class="col-xs-3 control-label">seo标题：</label>
+                        <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>seo标题：</label>
                         <div class="col-xs-8 ">
                             <input type="text" class="form-control input-sm" name='title' value="{$row_->title}" >
                         </div>
                     </div>
                     <div class="form-group " id="values" style="display: block;">
-                        <label for="sName" class="col-xs-3 control-label">seo关键词：</label>
+                        <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>seo关键词：</label>
                         <div class="col-xs-8 ">
                             <textarea rows="4" cols="40" name="keywords">{$row_->keywords}</textarea>
                         </div>
@@ -64,16 +64,16 @@
     $(function () {
         $('form').bootstrapValidator({
             fields: {
-                name: {
+                title: {
                     validators:
                         {
                             notEmpty: {
-                                message: '名称不能为空'
+                                message: '不能为空'
                             }
                         }
 
                 },
-                zige: {
+                keywords: {
                     validators: {
                         notEmpty: {
                             message: '不能为空'
@@ -82,7 +82,16 @@
 
                     }
                 },
-                duty: {
+                /*        description: {
+                 validators: {
+                 notEmpty: {
+                 message: '不能为空'
+                 }
+
+
+                 }
+                 },*/
+                nav_id: {
                     validators: {
                         notEmpty: {
                             message: '不能为空'
@@ -90,7 +99,7 @@
 
 
                     }
-                }
+                },
 
             }
         });

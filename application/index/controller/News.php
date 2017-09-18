@@ -4,6 +4,7 @@ namespace app\index\controller;
 
 use app\common\model\Article;
 use app\common\model\Recruit;
+use app\common\model\SeoSet;
 use think\Controller;
 use think\Request;
 
@@ -17,8 +18,8 @@ class News extends Controller
         $list_new_2 =  Article::getList(['cate'=>2],['st'=>1],6);
         $list_new_3 =  Article::getList(['cate'=>3],['st'=>1],6);
         $list_new = Article::getList([],['st'=>1]);
-        //dump($list_new_index);
-        return $this->fetch('',compact('list_new_index','list_new_1','list_new_2','list_new_3','list_new'));
+        $seo = SeoSet::getSeoByNavId(4);
+        return $this->fetch('',compact('list_new_index','list_new_1','list_new_2','list_new_3','list_new','seo'));
     }
     public function get_list(Request $request){
        $data= $request->param();
@@ -34,8 +35,13 @@ class News extends Controller
         if(!$row_){
             $this->error('暂无数据');
         }
+        $seo = (object)[
+            'title'=>$row_->name.'_'.$row_->cate.'_'.config('site_name'),
+            'keywords'=>$row_->keywords,
+            'description'=>$row_->description,
+        ];
        // dump($row_->cate);exit;
-        return $this->fetch('',['row_news'=>$row_]);
+        return $this->fetch('',['row_news'=>$row_,'seo'=>$seo]);
 
   }
     public function media()
