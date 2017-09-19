@@ -15,7 +15,7 @@
         <dd><a href="{:url('read')}?id={$row_->id}" >{$row_->name}</a></dd>
         <dd>{$row_->cont}<a
                     href="{:url('read')}?id={$row_->id}" target=""
-                    style=" font:14px/24px '微软雅黑'; color:#097ec6; ">详情>></a></dd>
+                    style=" font:14px/24px '微软雅黑'; color:#097ec6;    padding-left: 20px; ">详情>></a></dd>
     </dl>
 
 <?php }?>
