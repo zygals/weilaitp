@@ -33,7 +33,7 @@
             <DIV class="bm">
                 <dl>
                     <dt>名称：<a href="{:url('anli/read')}?anli_id={$row_->id}">{$row_->name}</a></dt>
-                    <dd><span>类型：</span><a href='/anli/yingxiao/'>{$row_->cate_name}</a></dd>
+                    <dd><span>类型：</span><a href='{:url("index")}?cate_anli_id={$row_->cate_anli_id}'>{$row_->cate_name}</a></dd>
                     <dd><span>功能：</span>
                         <?php foreach($list_func as $k2=>$row_func){?>
                             <?php if(in_array($row_func->id,$row_->func_ids)){?>
