@@ -3,6 +3,7 @@
 namespace app\index\controller;
 
 use app\common\model\Ad;
+use app\common\model\Base;
 use app\common\model\CateAnli;
 use app\common\model\Func;
 use app\common\model\SeoSet;
@@ -36,8 +37,10 @@ class Anli extends Controller {
 
         $list_func = Func::getList();
         $seo = SeoSet::getSeoByNavId(3);
+        $page_str = $list_anli->render();
+        $page_str = Base::getPageStr($data,$page_str);
         //dump($list_anli);exit;
-        return $this->fetch('', compact('list_anli', 'list_func','list_cate_anli','seo'));
+        return $this->fetch('', compact('list_anli', 'list_func','list_cate_anli','page_str','seo'));
     }
 
    public function read(Request $request){

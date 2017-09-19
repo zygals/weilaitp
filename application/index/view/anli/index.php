@@ -46,5 +46,7 @@
 <?php }?>
     </UL>
 </DIV>
-</DIV>
+<div class="page_wrap">
+    {$page_str}
+</div>
 

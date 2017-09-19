@@ -18,4 +18,6 @@
 <?php }?>
 
 </div>
-
+<div class="page_wrap">
+    {$page_str}
+</div>
