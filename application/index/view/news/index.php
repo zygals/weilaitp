@@ -1,4 +1,8 @@
 <script type="text/javascript" src="__STATIC__/js/koala.min.1.5.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css"/>
+<style>
+    a{color:inherit}
+</style>
 <div style=" border-top:1px solid #e1e1e1;"></div>
 
 <div class="news_liest">
@@ -110,6 +114,6 @@
     <?php } ?>
 
 </div>
-<div class="page_wrap">
+<div class="clearfix" style="text-align: center;margin-bottom:20px;">
     {$page_str}
 </div>

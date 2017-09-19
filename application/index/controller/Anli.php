@@ -37,13 +37,10 @@ class Anli extends Controller {
 
         $list_func = Func::getList();
         $seo = SeoSet::getSeoByNavId(3);
-<<<<<<< HEAD
+
         $page_str = $list_anli->render();
         $page_str = Base::getPageStr($data,$page_str);
-=======
-      //  $page_str = $list_anli->render();
-      //  $page_str = Base::getPageStr($data,$page_str);
->>>>>>> afdd8e72e65e5dca5324c49cb230942a9a3df8bd
+
         //dump($list_anli);exit;
         return $this->fetch('', compact('list_anli', 'list_func','list_cate_anli','page_str','seo'));
     }

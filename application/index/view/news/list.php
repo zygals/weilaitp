@@ -1,5 +1,8 @@
 <div style=" border-top:1px solid #e1e1e1;"></div>
-
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css"/>
+<style>
+    a{color:inherit}
+</style>
 <div class="news_mianbaoxian">您的位置：<a href='{:url("index/index")}'>未来和讯</a> > <a href='{:url("index")}'>资讯中心</a> &gt; {$list_new[0]->cate}
 </div>
 
@@ -18,6 +21,6 @@
 <?php }?>
 
 </div>
-<div class="page_wrap">
+<div class="clearfix" style="text-align: center;margin-bottom:20px;">
     {$page_str}
 </div>

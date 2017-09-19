@@ -233,15 +233,9 @@ return [
     ],
 
     //分页配置
-<<<<<<< HEAD
-    'paginate'               => [
-        'type'      => 'bootstrap',
-        'var_page'  => 'page',
-=======
     'paginate' => [
         'type' => 'bootstrap',
         'var_page' => 'page',
->>>>>>> afdd8e72e65e5dca5324c49cb230942a9a3df8bd
-        'list_rows' => 2,
+        'list_rows' => 2
     ],
 ];

@@ -8,6 +8,7 @@
 
     <link href="__STATIC__css/css.css" rel="stylesheet" type="text/css" />
     <link href="__STATIC__css/style.css" rel="stylesheet" type="text/css">
+
     <script src="__STATIC__js/jquery-1.js"></script>
 </head>
 <script type="text/javascript" src="__STATIC__js/jquery.js"></script>

@@ -1,6 +1,9 @@
 {include file="layout/anli_ad"}
-<!--<a name="anli_index"></a>-->
 
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css"/>
+<style>
+    a{color:inherit}
+</style>
 <div class="zxck_tab1">
     <ul>
         <a href="{:url('index')}?cate_anli_id=0">
@@ -46,11 +49,7 @@
 <?php }?>
     </UL>
 </DIV>
-<<<<<<< HEAD
-<div class="page_wrap">
+<div class="" style="text-align: center;margin-bottom:20px;clear:both;">
     {$page_str}
 </div>
-=======
-
->>>>>>> afdd8e72e65e5dca5324c49cb230942a9a3df8bd
 
