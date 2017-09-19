@@ -614,7 +614,7 @@ figure.effect-bubba:hover p {opacity: 1; transform: translate3d(0, 0, 0); -webki
 
 .anli_text{ width:1100px; margin:0 auto; padding-bottom:50px;}
 .anli_text img{ width:1100px; height:100%;}
-.anli_anniu{ width:100px; height:40px; text-align:center; font:16px/40px "微软雅黑"; background:#097ec6; margin:0 auto 50px auto; color:#fff;border-radius:4px 4px 4px 4px;}
+.anli_anniu{clear:both; width:100px; height:40px; text-align:center; font:16px/40px "微软雅黑"; background:#097ec6; margin:0 auto 50px auto; color:#fff;border-radius:4px 4px 4px 4px;}
 .anli_anniu a{width:100px; height:40px; display:block; text-decoration:none; color:#fff;}
 
 .right-fixed {

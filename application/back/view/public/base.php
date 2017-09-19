@@ -64,11 +64,11 @@
     <div class="leftMeun" id="leftMeun">
         <div id="logoDiv">
             欢迎使用后台
-            <!--<p id="logoP">
+            <p id="logoP">
 
-                <a href="__IMGURL__wx.php/index/clear_cache">
+                <a href="{:url('index/clear_cache')}">
                     <button class="alert btn-xs">清理前台缓存</button>
-                </a></p>-->
+                </a></p>
         </div>
         <div id="personInfor">
             <p id="userName">{php} if(session('admin_guoshu'))echo session('admin_guoshu')->name{/php} <a

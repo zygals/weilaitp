@@ -83,7 +83,7 @@
                                 <label class="control-label" >
                                     <input type="radio" name="index_show" class="index_show yes" value="1" >是</label> &nbsp;
                                 <label class="control-label">
-                                    <input type="radio" name="index_show" class="index_show no" value="0" checked> 否</label>
+                                    <input type="radio" name="index_show" class="index_show no" value="0" checked> 否</label><br /><span>出现在资讯首页轮播图位置?</span>
                             </div>
                         </div>
 

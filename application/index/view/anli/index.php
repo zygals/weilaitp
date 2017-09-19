@@ -46,7 +46,11 @@
 <?php }?>
     </UL>
 </DIV>
+<<<<<<< HEAD
 <div class="page_wrap">
     {$page_str}
 </div>
+=======
+
+>>>>>>> afdd8e72e65e5dca5324c49cb230942a9a3df8bd
 
