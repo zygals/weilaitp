@@ -330,7 +330,7 @@ filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorst
 /*选项卡1*/
 #Tab1{ float:left; width:620px; background:#f5f5f5; height:320px;}
 .Menubox{}
-.Menubox ul{ border-bottom:solid 1px #e1e1e1; height:41px; padding:20px 30px 0 30px; width:560px}
+.Menubox ul{ border-bottom:solid 1px #e1e1e1; height:63px; padding:20px 30px 0 30px; width:560px}
 .Menubox ul li{ float:left; width:120px; text-align:center;cursor:pointer; font:16px/40px "微软雅黑";}
 .Menubox li.hover{ color:#097dc6; border-bottom:solid 3px #097dc6;}
 .Contentbox{ clear:both; margin-top:15px;}
@@ -613,7 +613,7 @@ figure.effect-bubba:hover p {opacity: 1; transform: translate3d(0, 0, 0); -webki
 
 
 .anli_text{ width:1100px; margin:0 auto; padding-bottom:50px;}
-.anli_text img{ width:1100px; height:100%;}
+.anli_text img{  height:100%;}
 .anli_anniu{clear:both; width:100px; height:40px; text-align:center; font:16px/40px "微软雅黑"; background:#097ec6; margin:0 auto 50px auto; color:#fff;border-radius:4px 4px 4px 4px;}
 .anli_anniu a{width:100px; height:40px; display:block; text-decoration:none; color:#fff;}
 

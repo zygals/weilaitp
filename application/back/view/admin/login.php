@@ -7,7 +7,7 @@
     }</style>
 <div role="tabpanel" class="tab-pane" id="chan" style="display:block;">
     <div class="check-div">
-        棒师傅后台登陆
+        未来和讯后台登陆
     </div>
     <div style="padding: 50px 0;margin-top: 50px;background-color: #fff; text-align: right;width: 420px;margin: 50px auto;">
         <form class="form-horizontal" action="{:Url('admin/sigin')}" method="post">
