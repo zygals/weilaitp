@@ -108,5 +108,20 @@ class BaseController extends Controller {
             }
 
         }
+        public function uploadImg($file,$modelName){
+
+            if (empty($file)) {
+                $this->error('请上传图片或检查图片大小！');
+            }
+
+            $size = $file->getSize();
+            if ($size > config('upload_size')) {
+                $this->error('图片大小超过限定！');
+            }
+
+            $path_name = $modelName;
+            $arr = $this->dealImg($file, $path_name);
+            return $arr['save_url_path'];
+        }
 
 }

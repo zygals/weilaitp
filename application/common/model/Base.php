@@ -60,7 +60,7 @@ class Base extends model {
                     ['name' => '媒体报道', 'link' => 'news/get_list','param'=>'cate=1'],
                     ['name' => '行业资讯', 'link' => 'news/get_list','param'=>'cate=2'],
                     ['name' => '企业动态', 'link' => 'news/get_list','param'=>'cate=3'],
-//                ['name' => '运营课堂', 'link' => 'news/chuangke',],
+                    ['name' => '运营课堂', 'link' => 'news/chuangke','param'=>''],
 
                 ]
             ],

@@ -11,7 +11,8 @@
 
 return [
     //前台所有请求加缓存
-   'request_cache' => false,
+  // 'request_cache' => true,
+   // 'request_cache_except' => ['/weilaitp/public/news/read','/weilaitp/public/news/read_shipin'],
     // +----------------------------------------------------------------------
     // | 模板设置
     // +----------------------------------------------------------------------

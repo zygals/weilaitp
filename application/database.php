@@ -19,7 +19,7 @@ return [
     // 用户名
     'username'        => 'root',
     // 密码
-    'password'        => 'j28981',
+    'password'        => 'root',
     // 端口
     'hostport'        => '',
     // 连接dsn
@@ -41,7 +41,7 @@ return [
     // 指定从服务器序号
     'slave_no'        => '',
     // 是否严格检查字段是否存在
-    'fields_strict'   => true,
+    'fields_strict'   => 0,
     // 数据集返回类型
     'resultset_type'  => 'array',
     // 自动写入时间戳字段
