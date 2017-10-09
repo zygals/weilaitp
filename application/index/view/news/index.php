@@ -107,7 +107,7 @@
                             src='__IMGURL__{$row_->img}' border='0' width='150' height='105'
                             alt='{$row_->name}'></a></dt>
             <dd><a href="{:url('read')}?id={$row_->id}" target="">{$row_->name}</a></dd>
-            <dd>{$row_->cont}<a
+            <dd>{$row_->charm}<a
                         href="{:url('read')}?id={$row_->id}" target=""
                         style=" font:14px/24px '微软雅黑'; color:#097ec6; padding-left: 20px; ">详情>></a></dd>
         </dl>

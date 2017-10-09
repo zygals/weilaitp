@@ -50,7 +50,12 @@
                                 <input type="text" class="form-control input-sm" name='name' value="{$row_->name}" id="" placeholder="">
                             </div>
                         </div>
-
+                        <div class="form-group ">
+                            <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>摘要：</label>
+                            <div class="col-xs-8 ">
+                                <textarea name="charm" id="" cols="80" rows="5">{$row_->charm}</textarea>
+                            </div>
+                        </div>
                         <div class="form-group" id="diliver_fee_wrap" style=";">
                             <label for="situation" class="col-xs-3 control-label">排序：</label>
                             <div class="col-xs-8">
@@ -127,6 +132,15 @@
                         {
                             notEmpty: {
                                 message: '名称不能为空'
+                            }
+                        }
+
+                },
+                charm: {
+                    validators:
+                        {
+                            notEmpty: {
+                                message: '不能为空'
                             }
                         }
 

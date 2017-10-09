@@ -51,8 +51,8 @@ class Article extends Base {
 
 
         foreach ($list_ as $k => $value) {
-            if (mb_strlen($value->cont, "UTF8") >60 ) {
-                $list_[$k]->cont = mb_substr($value->cont, 0, 130, 'utf-8') . '......';
+            if (mb_strlen($value->charm, "UTF8") >129 ) {
+                $list_[$k]->charm = mb_substr($value->charm, 0, 130, 'utf-8') . '......';
             }
         }
         return $list_;
