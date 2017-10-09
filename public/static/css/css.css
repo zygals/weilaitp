@@ -23,7 +23,7 @@ input:focus,textarea:focus{ outline:none; }
 .item a.cur{background:#fff;}
 .slide-box,.slide{display:block;width:100% !important; height:520px;overflow:hidden;}
 .slide-box{position:relative;}
-.slide{display:none;height:490px;padding-top:89px;background:#ff6900;position:relative;position:absolute;z-index:8; width:100%;min-width:1280px; }
+.slide{display:none;height:490px;/*padding-top:89px;background:#ff6900;*/position:relative;position:absolute;z-index:8; width:100%;min-width:1280px; }
 #bgstylea{background:url(../images/bg-a.jpg);}
 #bgstyleb{background:url(../images/bg-b.jpg);}
 #bgstylec{background:url(../images/bg-c.jpg);}

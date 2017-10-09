@@ -1,12 +1,12 @@
 
 <div class="slide-main" id="touchMain">
     <a class="prev" href="javascript:;" stat="prev1001"><img src="__STATIC__images/l-btn.png"/></a>
-    <div class="slide-box" id="slideContent">
+    <div class="slide-box" id="">
 
 <?php foreach($list_ad as $k=>$row_ad){?>
-        <div class="slide" id="bgstylec">
-            <a stat="sslink-3" <?= \app\common\model\Ad::urlOpen($row_ad->url,$row_ad->new_window);?>>
-                <div class="obj-e"><img src="__IMGURL__{$row_ad->img}"/></div>
+        <div class="slide" id="">
+            <a  <?= \app\common\model\Ad::urlOpen($row_ad->url,$row_ad->new_window);?>>
+                <div ><img src="__IMGURL__{$row_ad->img}"/></div>
             </a>
         </div>
 <?php }?>
@@ -189,7 +189,7 @@
         <ul>
         <?php foreach($list_cate_anli as $k=>$row_cate){?>
             <a href="{:url('index/index')}?cate_anli_id={$row_cate->id}#anli_index">
-                <li class="<?php if($row_cate->id==$list_anli[0]->cate_anli_id){?>hover<?php }?>">{$row_cate->name}</li>
+                <li class="">{$row_cate->name}</li>
             </a>
             <?php }?>
         </ul>
