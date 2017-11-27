@@ -302,8 +302,8 @@
 <div class="right-fixed">
     <span href="" class="close-a"></span>
     <div class="group-box" style="margin-top:20px" >
-<?php foreach ($qqs as $qq){?>
-        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<?= $qq?>&site=qq&menu=yes" class="kf-qq mar" style="margin-bottom:14px"><img src="__STATIC__images/qq-kf1.png"><span></span></a>
+<?php foreach ($qqs as $k=>$qq){?>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<?= $qq?>&site=qq&menu=yes" class="kf-qq mar" style="margin-bottom:14px"><img src="__STATIC__images/qq-kf<?= ++$k;?>.png"><span></span></a>
 <?php }?>
 
 
