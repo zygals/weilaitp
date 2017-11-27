@@ -7,6 +7,7 @@ use app\common\model\CateAnli;
 use app\common\model\Friend;
 use app\common\model\Func;
 use app\common\model\SeoSet;
+use app\common\model\Setting;
 use think\Controller;
 use think\Request;
 
@@ -36,6 +37,8 @@ class Index extends Controller {
         $list_friend_hezuo= Friend::getList(['type'=>2]);
         $seo = SeoSet::getSeoByNavId(1);
        //dump($list_friend_hezuo);
-        return $this->fetch('', compact('list_ad', 'list_cate_anli', 'list_anli', 'list_func','list_friend_hezuo','seo'));
+        $qqs = Setting::getSet()->qqs;
+        $qqs = explode(',',$qqs);
+        return $this->fetch('', compact('list_ad', 'list_cate_anli', 'list_anli', 'list_func','list_friend_hezuo','seo','qqs'));
     }
 }

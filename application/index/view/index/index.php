@@ -295,21 +295,17 @@
 
             </div>
             <A class=prev href="javascript:void();">Previous</A>
-            <A class=next href="javascript:void();">Next</A>
+            <a class=next href="javascript:void();">Next</a>
         </div>
     </div>
 </div>
 <div class="right-fixed">
     <span href="" class="close-a"></span>
     <div class="group-box" style="margin-top:20px" >
+<?php foreach ($qqs as $qq){?>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<?= $qq?>&site=qq&menu=yes" class="kf-qq mar" style="margin-bottom:14px"><img src="__STATIC__images/qq-kf1.png"><span></span></a>
+<?php }?>
 
-        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2045033427&site=qq&menu=yes" class="kf-qq mar" style="margin-bottom:14px"><img src="__STATIC__images/qq-kf1.png"><span></span></a>
-
-        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1654695171&site=qq&menu=yes" class="kf-qq mar" style="margin-bottom:14px"><img src="__STATIC__images/qq-kf2.png"><span></span></a>
-
-        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3172616726&site=qq&menu=yes" class="kf-qq mar" style="margin-bottom:14px"><img src="__STATIC__images/qq-kf3.png"><span></span></a>
-
-        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1625125091&site=qq&menu=yes" class="kf-qq mar" style="margin-bottom:14px"><img src="__STATIC__images/qq-kf4.png"><span></span></a>
 
     </div>
     <a target="_blank" href="https://shang.qq.com/wpa/qunwpa?idkey=3cb4bb2d4914086c8e6f8ee26d2773432baf80c73e7ec0adeac137b852619979" class="kf-qq mar">
