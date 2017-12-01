@@ -26,7 +26,9 @@
                     <dt>版权所有：北京未来和讯信息科技有限公司　京ICP备16058967号-1</dt>
                     <dd><img src="__STATIC__images/banquan_07.png" height="17"/><img
                             src="__STATIC__images/banquan_09.png" height="17"/><img
-                            src="__STATIC__images/banquan_11.png" height="17"/></dd>
+                            src="__STATIC__images/banquan_11.png" height="17"/>
+                        <a href="http://webscan.360.cn/index/checkwebsite/url/www.weilaihexun.com"><img border="0" src="http://webscan.360.cn/status/pai/hash/a751c6353279e1e04bd05227003e35f1"/></a>
+                    </dd>
                 </dl>
             </div>
         </div>
