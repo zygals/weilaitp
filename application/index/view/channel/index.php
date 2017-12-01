@@ -1,4 +1,4 @@
-<div class="yxzj_banner4"><img src="__STATIC__/images/1X1PNG.png" width="1200" height="292" /></div>
+<div class="yxzj_banner4"><img alt="暂无图片" src="__STATIC__/images/1X1PNG.png" /></div>
 <!--标题-->
 <div class="index_title">
     <dl>

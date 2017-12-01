@@ -33,7 +33,7 @@
 
 <div class="index_cp">
     <div class="index_cpxq">
-        <a href="/yewu/yingxiao/">
+        <a href="{:url('yewu/index')}">
             <dl class="bg1">
                 <dt><b>推手全案营销专家</b><br/>
                     一站式营销服务<br/>
@@ -42,11 +42,11 @@
                 <dd>立即查看</dd>
             </dl>
         </a>
-        <span><a href="/yewu/yingxiao/">推手全案营销专家</a></span>
+        <span><a href="{:url('yewu/index')}">推手全案营销专家</a></span>
     </div>
 
     <div class="index_cpxq">
-        <a href="/yewu/tuoguan/">
+        <a href="{:url('yewu/tuoguan')}">
             <dl class="bg2">
                 <dt><b>推手金牌托管管家</b><br/>
                     你的幼苗<br/>
@@ -55,11 +55,11 @@
                 <dd>立即查看</dd>
             </dl>
         </a>
-        <span><a href="/yewu/tuoguan/">推手金牌托管管家</a></span>
+        <span><a href="{:url('yewu/tuoguan')}">推手金牌托管管家</a></span>
     </div>
 
     <div class="index_cpxq">
-        <a href="/yewu/qyy/">
+        <a href="{:url('yewu/qyy')}">
             <dl class="bg3">
                 <dt><b>轻应用联盟</b><br/>
                     小程序  公众号  微应用<br/>
@@ -70,11 +70,9 @@
                 <dd>立即查看</dd>
             </dl>
         </a>
-        <span><a href="/yewu/qyy/">轻应用联盟</a></span>
+        <span><a href="{:url('yewu/qyy')}">轻应用联盟</a></span>
     </div>
-
 </div>
-
 
 <!--标题-->
 <div class="index_title">
@@ -89,30 +87,30 @@
     <UL class="serQuery" id="service">
         <li class="serLi">
             <div class="serWrap fanganbg1">
-                <a href="#">
+<!--                <a href="#">-->
                     <div class="serIco serIco1"></div>
                     <div class="serIntro">网站建设</div>
-                </a>
+<!--                </a>-->
             </div>
             <div class="ser_bg"><IMG src="__STATIC__images/bg_yy.png"></div>
         </li>
 
         <li class="serLi">
             <div class="serWrap fanganbg2">
-                <a href="#">
+<!--                <a href="#">-->
                     <div class="serIco serIco2"></div>
                     <div class="serIntro">APP开发</div>
-                </a>
+<!--                </a>-->
             </div>
             <div class="ser_bg"><IMG src="__STATIC__images/bg_yy.png"></div>
         </li>
 
         <li class="serLi">
             <div class="serWrap  fanganbg3">
-                <a href="#">
+<!--                <a href="#">-->
                     <div class="serIco serIco3"></div>
                     <div class="serIntro">微信开发</div>
-                </a>
+<!--                </a>-->
             </div>
             <div class="ser_bg"><IMG src="__STATIC__images/bg_yy.png"></div>
         </li>
@@ -120,50 +118,50 @@
 
         <li class="serLi">
             <div class="serWrap fanganbg4">
-                <a href="#">
+<!--                <a href="#">-->
                     <div class="serIco serIco4"></div>
                     <div class="serIntro">商城开发</div>
-                </a>
+<!--                </a>-->
             </div>
             <div class="ser_bg"><IMG src="__STATIC__images/bg_yy.png"></div>
         </li>
 
         <li class="serLi">
             <div class="serWrap fanganbg3">
-                <a href="#">
+<!--                <a href="#">-->
                     <div class="serIco serIco5"></div>
                     <div class="serIntro">新闻软文</div>
-                </a>
+<!--                </a>-->
             </div>
             <div class="ser_bg"><IMG src="__STATIC__images/bg_yy.png"></div>
         </li>
 
         <li class="serLi">
             <div class="serWrap fanganbg1">
-                <a href="#">
+<!--                <a href="#">-->
                     <div class="serIco serIco6"></div>
                     <div class="serIntro">活动策划</div>
-                </a>
+<!--                </a>-->
             </div>
             <div class="ser_bg"><IMG src="__STATIC__images/bg_yy.png"></div>
         </li>
 
         <li class="serLi">
             <div class="serWrap fanganbg4">
-                <a href="#">
+<!--                <a href="#">-->
                     <div class="serIco serIco7"></div>
                     <div class="serIntro">新媒体代运营</div>
-                </a>
+<!--                </a>-->
             </div>
             <div class="ser_bg"><IMG src="__STATIC__images/bg_yy.png"></div>
         </li>
 
         <li class="serLi">
             <div class="serWrap fanganbg2">
-                <a href="#">
+<!--                <a href="#">-->
                     <div class="serIco serIco8"></div>
                     <div class="serIntro">品牌战略发布会</div>
-                </a>
+<!--                </a>-->
             </div>
             <div class="ser_bg"><IMG src="__STATIC__images/bg_yy.png"></div>
         </li>
