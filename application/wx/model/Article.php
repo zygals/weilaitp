@@ -26,9 +26,11 @@
         public static  function getList($data){
             $id = $data['id'];
             $list = self::where(['id'=>$id,'st'=>1])->find();
+
             if(!count($list)>0){
                 return ['code'=>__LINE__,'msg'=>'暂无资讯'];
             }
+            $list->cont = preg_replace("/\"editor/im", $list->cont, '"http://www.weilaihexun.com/editor');
             return ['code'=>0,'msg'=>'article/getInfo','data'=>$list];
         }
     }
