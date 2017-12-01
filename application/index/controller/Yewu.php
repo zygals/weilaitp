@@ -14,10 +14,7 @@ class Yewu extends Controller
         $seo = SeoSet::getSeoByNavId(2);
         return $this->fetch('',compact('row_ad','seo'));
     }
-  public function yingxiao(){
 
-      return $this->fetch('index');
-  }
   public function tuoguan(){
       $row_ad  = Ad::getAdByPosition(3);
       return $this->fetch('',compact('row_ad'));
