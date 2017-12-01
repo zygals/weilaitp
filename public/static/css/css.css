@@ -3,6 +3,9 @@
 body{font:12px/22px "微软雅黑";color:#555;background: url(../images/bg.jpg);width:100%;min-width:1280px;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,span,img,textarea,p,blockquote,th,td,a,button{margin:0;padding:0;border:none;} 
 img{border:0;vertical-align:top;margin:0;padding:0;}
+.swiper-ad{
+    width:100%;
+}
 ul,li{list-style:none;}
 h1,h2,h3,h4,h5{font-size:12px;font-weight:normal;}
 a{color:#555;text-decoration:none;}
@@ -15,6 +18,12 @@ input:focus,textarea:focus{ outline:none; }
 
 .slide-main{height:520px;position:relative; width:100% !important;  width:100%;min-width:1280px;}
 .prev,.next{display:block;width:44px;height:44px;position:absolute;z-index:222;top:237px;overflow:hidden;cursor:pointer;opacity:0.6;-moz-opacity:0.6;filter:alpha(opacity=60);_border:1px solid none;}
+
+@media screen and (max-width: 1366px) {
+    .prev,.next {
+        top: 170px;
+    }
+}
 .prev{left:70px;}
 .next{right:70px;}
 .prev:hover,.next:hover,.nav-main a:hover,.nav-main a.cur{opacity:1;-moz-opacity:1;filter:alpha(opacity=100);}
