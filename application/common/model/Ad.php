@@ -17,7 +17,7 @@ class Ad extends model {
     }
 
     public function getPositionAttr($value) {
-        $status = [1 => '首页', 2 => '业务体系', 3 => '金牌托管', 4 => '品牌案例', 5 => '关于我们',6=>'轻应用联盟'
+        $status = [1 => '首页', 2 => '业务体系', 3 => '金牌托管', 4 => '品牌案例', 5 => '关于我们',6=>'轻应用联盟',7 => '小程序banner'
         ];
         return $status[$value];
     }
@@ -97,7 +97,19 @@ class Ad extends model {
                 'name' => '轻应用联盟',
                 'width' => '1920',
                 'height' => '223',
-            ]
+            ],
+            7 => (object)[
+                'id' => 7,
+                'name' => '小程序banner',
+                'width' => '750',
+                'height' => '300',
+            ],
+//            8 => (object)[
+//                'id' => 7,
+//                'name' => '小程序服务案例',
+//                'width' => '750',
+//                'height' => '300',
+//            ],
 
         ];
         return $arr;
