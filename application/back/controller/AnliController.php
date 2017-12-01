@@ -66,10 +66,11 @@ class AnliController extends BaseController {
         $path_name = 'anli';
         $arr = $this->dealImg($file, $path_name);
         $data['img'] = $arr['save_url_path'];
-
         if(!empty($data['func_ids'])){
             $data['func_ids'] = implode(',',$data['func_ids']);
         }
+        $data['cont'] = htmlspecialchars($data['cont']);
+        dump($data);exit;
         $Article = new Anli();
         $Article->save($data);
         $this->success('添加成功', 'index', '', 1);
@@ -110,6 +111,9 @@ class AnliController extends BaseController {
             $this->error($res);
         }
         $row_ = $this->findById($data['id'],new Anli());
+        if($data['cont'] != ''){
+            $data['cont'] = htmlspecialchars($data['cont']);
+        }
         $file = $request->file('img');
         if(!empty($file)){
             $path_name = 'anli';

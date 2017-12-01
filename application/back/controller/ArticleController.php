@@ -61,6 +61,7 @@ class ArticleController extends BaseController {
         $path_name = 'article';
         $arr = $this->dealImg($file, $path_name);
         $data['img'] = $arr['save_url_path'];
+        $data['cont'] = htmlspecialchars($data['cont']);
         $Article = new Article();
         $Article->save($data);
         $this->success('添加成功', 'index', '', 1);
@@ -97,6 +98,10 @@ class ArticleController extends BaseController {
             $this->error($res);
         }
         $row_ = $this->findById($data['id'],new Article());
+        if($data['cont'] != ''){
+            $data['cont'] = htmlspecialchars($data['cont']);
+        }
+//        dump($data);exit;
         $file = $request->file('img');
         if(!empty($file)){
             $path_name = 'article';

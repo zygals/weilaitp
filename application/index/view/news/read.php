@@ -18,7 +18,9 @@
 
 
     <div class="anli_text">
-        {$row_news->cont}
+        <?php
+        echo htmlspecialchars_decode($row_news->cont);
+        ?>
         <br/>
     </div>
     <div class="anli_anniu"><a href="javascript:window.history.back()">返回</a></div>
