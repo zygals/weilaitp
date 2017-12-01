@@ -6,7 +6,7 @@
 <?php foreach($list_ad as $k=>$row_ad){?>
         <div class="slide" id="">
             <a  <?= \app\common\model\Ad::urlOpen($row_ad->url,$row_ad->new_window);?>>
-                <div ><img src="__IMGURL__{$row_ad->img}"/></div>
+                <div ><img class="swiper-ad" src="__IMGURL__{$row_ad->img}"/></div>
             </a>
         </div>
 <?php }?>
