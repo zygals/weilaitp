@@ -19,7 +19,7 @@
 
     <div class="anli_text">
         <?php
-        echo htmlspecialchars_decode($row_news->cont);
+        echo ($row_news->cont);
         ?>
         <br/>
     </div>

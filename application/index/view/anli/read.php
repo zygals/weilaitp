@@ -14,7 +14,7 @@
 
     <div class="anli_text">
         <?php
-        echo htmlspecialchars_decode($row_anli->cont);
+        echo ($row_anli->cont);
         ?>
     <br />
 </div>
