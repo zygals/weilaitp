@@ -423,7 +423,13 @@ box-shadow: #333 0px 0px 10px;}
 .zxck_list dl dt{}
 
 .zxck_list dl dd{font:12px/22px "微软雅黑"; color:#999; padding:5px 10px;}
-.zxck_list dl dd a{text-decoration:none; color:#999;}
+.zxck_list dl dd a{
+	text-decoration:none; color:#999;overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+}
 .zxck_list dl dd a:hover{ color:#097ec6; }
 .video_jieshao{ width:1200px; margin:0 auto;}
 .video_jieshao dl{ padding-top:30px; padding-bottom:50px;}

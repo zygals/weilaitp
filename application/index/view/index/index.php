@@ -325,7 +325,6 @@
 
         $(window).scroll(function () {
             $t = $(window).scrollTop();
-
             if ($t > 50) {
                 $('.header').addClass('header-fix');
             }
@@ -334,16 +333,15 @@
                 $('.header').removeClass('header-fix');
             }
         });
-
     });
 
     $('.close-a').click(function () {
         $('.right-fixed').css('display','none');
     });
     $('.return-top').click(function (e) {
-        alert(222)
-        e.preventDefault();
-        $(document.body).animate({scrollTop: 0}, 300);
+        window.scrollTo(0,0);
+//        e.preventDefault();
+//        $(document.body).animate({scrollTop: 0}, 300);
     });
 
 </SCRIPT>
