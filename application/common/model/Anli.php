@@ -41,7 +41,7 @@ class Anli extends Base {
             $order = 'anli.' . $data['paixu'] . ' desc';
         }
 
-        $list_ = self::where($where)->join('cate_anli ca','ca.id=anli.cate_anli_id')->field($filed)->order($order)->paginate();
+        $list_ = self::where($where)->join('cate_anli ca','ca.id=anli.cate_anli_id')->field($filed)->order($order)->paginate(12);
 //funcs
 
         return $list_;
