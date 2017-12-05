@@ -70,7 +70,7 @@ class AnliController extends BaseController {
             $data['func_ids'] = implode(',',$data['func_ids']);
         }
         $data['cont'] = htmlspecialchars($data['cont']);
-        dump($data);exit;
+//        dump($data);exit;
         $Article = new Anli();
         $Article->save($data);
         $this->success('添加成功', 'index', '', 1);

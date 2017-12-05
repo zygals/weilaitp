@@ -310,7 +310,7 @@
         <img border="0" src="__STATIC__images/group.png" alt="轻应用代理交流群" title="轻应用代理交流群"> <span>代理交流群</span>
     </a>
     <p class="phone"><span class="icon"></span>010-8639-9210-811</p>
-    <a href="" class="return-top"><span class="icon"></span>返回顶部</a>
+    <a href="javascript:void(0)" class="return-top"><span class="icon"></span>返回顶部</a>
 </div>
 <SCRIPT src="__STATIC__/js/lazyload.js" type="text/javascript"></SCRIPT>
 <SCRIPT>
@@ -341,6 +341,7 @@
         $('.right-fixed').css('display','none');
     });
     $('.return-top').click(function (e) {
+        alert(222)
         e.preventDefault();
         $(document.body).animate({scrollTop: 0}, 300);
     });
