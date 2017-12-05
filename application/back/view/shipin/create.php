@@ -41,13 +41,13 @@
 							<div class="form-group ">
                                 <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>名称：</label>
 								<div class="col-xs-8 ">
-									<input type="text" class="form-control input-sm duiqi" name='name' value="{$row_->name|default=''}" id="" placeholder="">
+									<input type="text" class="form-control input-sm" name='name' value="{$row_->name|default=''}" id="" placeholder="">
 								</div>
 							</div>
                         <div class="form-group ">
-                            <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>腾讯视频url：</label>
+                            <label for="sName" class="col-xs-3 control-label"><span style="color:red;">*&nbsp;&nbsp;</span>腾讯视频(flash)：</label>
                             <div class="col-xs-8 ">
-                                <input type="text" class="form-control input-sm duiqi" name='vid' value="{$row_->vid|default=''}" id="" placeholder="">
+                                <input type="text" class="form-control input-sm" name='vid' value="{$row_->vid|default=''}" id="" placeholder=""><span>视频flash地址</span>
                             </div>
                         </div>
                         <?php if($act=='update'){?>

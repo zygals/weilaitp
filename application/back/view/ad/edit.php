@@ -41,7 +41,7 @@
                             <div class="col-xs-4 ">
                                 <img src="__IMGURL__{$row_->img}" alt="没有上传图片" height="150"/>
 
-                                <input type="file" title='' class="form-control  duiqi" id="sOrd" name="img" placeholder=""><span style="color:red">尺寸要求（<b id="pix_require">1290*670</b>），大小不超过<?php echo floor(config('upload_size')/1024/1024);?>M。不选择表示不修改。</span>
+                                <input type="file" title='' class="form-control  duiqi" id="sOrd" name="img" placeholder=""><span style="color:red">尺寸要求（<b id="pix_require">1920*600</b>），大小不超过<?php echo floor(config('upload_size')/1024/1024);?>M。不选择表示不修改。</span>
 
                             </div>
 
