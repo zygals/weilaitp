@@ -20,11 +20,11 @@ input:focus,textarea:focus{ outline:none; }
 .slide-main{height:520px;position:relative; width:100% !important;  width:100%;min-width:1280px;}
 .prev,.next{display:block;width:44px;height:44px;position:absolute;z-index:222;top:237px;overflow:hidden;cursor:pointer;opacity:0.6;-moz-opacity:0.6;filter:alpha(opacity=60);_border:1px solid none;}
 
-@media screen and (max-width: 1366px) {
-    .prev,.next {
-        top: 170px;
-    }
-}
+/*@media screen and (max-width: 1366px) {*/
+    /*.prev,.next {*/
+        /*top: 170px;*/
+    /*}*/
+/*}*/
 .prev{left:70px;}
 .next{right:70px;}
 .prev:hover,.next:hover,.nav-main a:hover,.nav-main a.cur{opacity:1;-moz-opacity:1;filter:alpha(opacity=100);}
