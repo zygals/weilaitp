@@ -53,7 +53,6 @@
 .slide-wrap {
     position: relative;
     overflow: hidden;
-    height: 665px;
 }
 .slider {
     position: absolute;
@@ -73,8 +72,7 @@
 }
 
 .sb-slider img {
-    width: 1920px;
-    height: 665px;
+    width: 100%;
 }
 
 
