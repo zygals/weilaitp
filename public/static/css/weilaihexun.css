@@ -54,11 +54,6 @@
     position: relative;
     overflow: hidden;
 }
-@media screen and (max-width: 1366px) {
-    .slide-wrap {
-        height: 478px;
-    }
-}
 .slider {
     position: absolute;
     overflow: hidden;
@@ -105,7 +100,11 @@
         text-align: center;
     }
 }
-
+@media screen and (max-width: 1366px) {
+    .slide-wrap {
+        height: 478px;
+    }
+}
 .z-box h2,.z-box h4 {
     font-size: 60px;
     font-weight: 300;
