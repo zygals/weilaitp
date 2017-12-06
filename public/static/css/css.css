@@ -20,11 +20,6 @@ input:focus,textarea:focus{ outline:none; }
 .slide-main{height:520px;position:relative; width:100% !important;  width:100%;min-width:1280px;}
 .prev,.next{display:block;width:44px;height:44px;position:absolute;z-index:222;top:237px;overflow:hidden;cursor:pointer;opacity:0.6;-moz-opacity:0.6;filter:alpha(opacity=60);_border:1px solid none;}
 
-/*@media screen and (max-width: 1366px) {*/
-    /*.prev,.next {*/
-        /*top: 170px;*/
-    /*}*/
-/*}*/
 .prev{left:70px;}
 .next{right:70px;}
 .prev:hover,.next:hover,.nav-main a:hover,.nav-main a.cur{opacity:1;-moz-opacity:1;filter:alpha(opacity=100);}
@@ -33,11 +28,11 @@ input:focus,textarea:focus{ outline:none; }
 .item a.cur{background:#fff;}
 .slide-box,.slide{display:block;width:100% !important; height:520px;overflow:hidden;}
 .slide-box{position:relative;}
-.slide{display:none;height:520px;/*padding-top:89px;background:#ff6900;*/position:relative;position:absolute;z-index:8; width:100%;min-width:1280px; }
+.slide{display:none;/*padding-top:89px;background:#ff6900;*/position:relative;position:absolute;z-index:8; width:100%;min-width:1280px; }
 #bgstylea{background:url(../images/bg-a.jpg);}
 #bgstyleb{background:url(../images/bg-b.jpg);}
 #bgstylec{background:url(../images/bg-c.jpg);}
-.slide a{display:block;width:100% !important; height:520px;cursor:pointer;}
+.slide a{display:block;width:100% !important;cursor:pointer;}
 .obj-a,.obj-b,.obj-c,.obj-d,.obj-e,.obj-f{position:absolute;z-index:9;left:50%;}
 .obj-a,.obj-b{width:952px;margin-left:-476px;text-align:center;}
 .obj-a{display:block;height:352px;top:115px;}
@@ -68,3 +63,15 @@ input:focus,textarea:focus{ outline:none; }
 @-webkit-keyframes saAnid{from{opacity:0;left:53%;} to{opacity:1;left:50%;} }
 @-moz-keyframes saAnid{from{opacity:0;left:53%;} to{opacity:1;left:50%;} }
 @keyframes saAnid{from{opacity:0;left:53%;} to{opacity:1;left:50%;} }
+
+@media screen and (max-width: 1366px) {
+    .swiper-ad {
+        height: 478px;
+    }
+    .slide-box,.slide {
+        height: 478px;
+    }
+    .item {
+        top: 444px;
+    }
+}
