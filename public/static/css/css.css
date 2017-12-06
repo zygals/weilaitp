@@ -66,12 +66,20 @@ input:focus,textarea:focus{ outline:none; }
 
 @media screen and (max-width: 1366px) {
     .swiper-ad {
-        height: 478px;
+        height: 380px;
     }
     .slide-box,.slide {
-        height: 478px;
+        height: 380px;
     }
     .item {
-        top: 444px;
+        top: 350px;
+    }
+    .prev {
+        left:45px;
+        top: 175px;
+    }
+    .next {
+        right: 45px;
+        top: 175px;
     }
 }
