@@ -54,6 +54,11 @@
     position: relative;
     overflow: hidden;
 }
+@media screen and (max-width: 1366px) {
+    .slide-wrap {
+        height: 478px;
+    }
+}
 .slider {
     position: absolute;
     overflow: hidden;
