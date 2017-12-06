@@ -33,13 +33,10 @@
     <div id="featured-area">
         <ul>
            <?php foreach($list_shipin_index_show as $row_){?>
-            <li><a href="{:url('read_shipin')}?id={$row_->id}"><h1>{$row_->name}</h1><span>...</span><img
+            <li><a href="{:url('read_shipin')}?id={$row_->id}"><h1>{$row_->name}</h1><span>{$row_->name}</span><img
                             src='__IMGURL__{$row_->img_index}' border='0' width='660' height='380'
                             alt='{$row_->name}'></a></li>
             <?php }?>
-
-
-
         </ul>
     </div>
 
