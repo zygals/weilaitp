@@ -15,7 +15,7 @@
 .current .logo{width:100px;margin-top: 3px;}
 .current .logo img{vertical-align: top;border: none;max-width: 100%;}
 .current .menu ul li a, .menu ul li a:visited {display:block; text-align:center; text-decoration:none;
-    height:40px;border:1px solid #fff;border-width:1px 0px 0 0;line-height:40px; font-size:12px; width:140px; display:block;}
+    height:40px;border:1px solid #fff;border-width:1px 0px 0 0;line-height:40px; font-size:12px; width:140px;display:block;}
 .current .menu a{line-height:40px;font-size:12px;}
 .current .current .menu a:hover{ background:#097ec6;}
 .current .menu ul li:hover ul {display:block; position:absolute; top:40px; left:0; width:140px;}
@@ -42,9 +42,9 @@
 .current .navi_head>div>span>p a{text-decoration:none; font:12px/30px "微软雅黑";}
 .navi_head>div>span>p a:hover{color:#097ec6;text-decoration: none;}
 .navi_head>div>span>p.navi_title a{font:16px/75px "微软雅黑";line-height:75px;margin-top:0; color:#333;}
-.navi_head>div>span>p.navi_title a:hover{color:#097ec6;t}
+.navi_head>div>span>p.navi_title a:hover{color:#097ec6;}
 .current .navi_head>div>span>p.navi_title a{font:14px/40px "微软雅黑";line-height:40px;margin-top:0;color:#333;}
-.current .navi_head>div>span>p.navi_title a:hover{color:#097ec6;t}
+.current .navi_head>div>span>p.navi_title a:hover{color:#097ec6;}
 .navi_title{ font:16px/75px "微软雅黑";line-height:75px;margin-top:0;}
 .current .navi_title{font-size:14px;line-height:40px;margin-top:0;}
 .navi_head>div>span:hover{}
