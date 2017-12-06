@@ -18,10 +18,7 @@
 
 
     <div class="anli_text">
-        <?php
-        echo ($row_news->cont);
-        ?>
-        <br/>
+        {$row_news->cont}
     </div>
     <div class="anli_anniu"><a href="javascript:window.history.back()">返回</a></div>
     <script>

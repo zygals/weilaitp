@@ -32,11 +32,11 @@ input:focus,textarea:focus{ outline:none; }
 .item a.cur{background:#fff;}
 .slide-box,.slide{display:block;width:100% !important; height:520px;overflow:hidden;}
 .slide-box{position:relative;}
-.slide{display:none;height:490px;/*padding-top:89px;background:#ff6900;*/position:relative;position:absolute;z-index:8; width:100%;min-width:1280px; }
+.slide{display:none;height:520px;/*padding-top:89px;background:#ff6900;*/position:relative;position:absolute;z-index:8; width:100%;min-width:1280px; }
 #bgstylea{background:url(../images/bg-a.jpg);}
 #bgstyleb{background:url(../images/bg-b.jpg);}
 #bgstylec{background:url(../images/bg-c.jpg);}
-.slide a{display:block;width:100% !important; height:490px;cursor:pointer;}
+.slide a{display:block;width:100% !important; height:520px;cursor:pointer;}
 .obj-a,.obj-b,.obj-c,.obj-d,.obj-e,.obj-f{position:absolute;z-index:9;left:50%;}
 .obj-a,.obj-b{width:952px;margin-left:-476px;text-align:center;}
 .obj-a{display:block;height:352px;top:115px;}
