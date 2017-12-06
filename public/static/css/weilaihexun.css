@@ -77,7 +77,12 @@
 
 
 @media screen and (max-width: 1366px) {
-    .header,.wrapper,.slide-wrap,.index-business,.index-charts,.dev-footer,.index-footer {
+    .slide-wrap {
+        width: 1300px;
+        height: 478px;
+        margin: 0 auto;
+    }
+    .header,.wrapper,.index-business,.index-charts,.dev-footer,.index-footer {
         width: 1300px;
         margin:0 auto;
     }
