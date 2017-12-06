@@ -538,9 +538,3 @@
 .bottom-pic img {
     margin-left: 5px;
 }
-
-@media screen and (max-width: 1366px) {
-    .slide-wrap {
-        height: 478px !important;
-    }
-}

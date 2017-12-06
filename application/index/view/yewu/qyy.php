@@ -1,4 +1,11 @@
+<style>
+    @media screen and (max-width: 1366px) {
+        .slide-wrap {
+            height: 478px !important;
+        }
+    }
 
+</style>
 
 <!--banner大图-->
 <div class="slide-wrap">
