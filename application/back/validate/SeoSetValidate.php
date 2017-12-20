@@ -6,10 +6,9 @@ use think\Validate;
 class SeoSetValidate extends Validate{
 	protected $rule = [
 		'nav_id'  =>  'require|in:1,2,3,4,5,6,7,8,9',
-		'title' =>  'require|max:100',
+		'title' =>  'require',
 		'keywords' =>  'require|max:255',
 		//'description' =>  'require|max:255',
-
 
 	];
 	protected $message  =   [

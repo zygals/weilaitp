@@ -187,7 +187,7 @@
         <ul>
         <?php foreach($list_cate_anli as $k=>$row_cate){?>
             <a href="{:url('index/index')}?cate_anli_id={$row_cate->id}#anli_index">
-                <li class="">{$row_cate->name}</li>
+                <li class="<?php if($row_cate->id==request()->param('cate_anli_id')){?>hover<?php }?>">{$row_cate->name}</li>
             </a>
             <?php }?>
         </ul>

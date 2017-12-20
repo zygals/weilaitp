@@ -20,7 +20,7 @@
 
 <DIV class="case_con">
     <UL class="case_conul">
-<?php foreach($list_anli as $row_){?>
+<?php foreach($list_anli as $row_) {?>
     <LI>
         <DIV class="plugthumb">
             <DIV class="tp"><A href="{:url('anli/read')}?anli_id={$row_->id}">

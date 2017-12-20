@@ -556,7 +556,7 @@ box-shadow: #333 0px 0px 10px;}
 
 
 .kehulist{ width:75%; margin:0 auto; padding-bottom:20px;}
-.kehulist ul{ /*padding:30px;*/ background:url(../images/kehu.jpg)}
+.kehulist ul{ padding:10px; background:url(../images/kehu.jpg)}
 .kehulist ul li{color:#666; width:720px; height:45px; padding: 0 30px 0 50px; background:url(../images/kehu_03.jpg) no-repeat 35px 22px; }
 .kehulist ul li a{ text-decoration:none;}
 .kehulist ul li a:hover{ color:#097dc6;}
