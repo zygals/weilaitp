@@ -42,9 +42,9 @@ class Base extends model {
             ['name' => '首页', 'link' => 'index/index','controller'=>'index','childs'=>[]],
             ['name' => '业务体系', 'link' => 'yewu/index','controller'=>'yewu',
                 'childs' => [
+                    ['name' => '轻应用联盟', 'link' => 'yewu/qyy','param'=>''],
                     ['name' => '全案营销专家', 'link' => 'yewu/index','param'=>''],
                     ['name' => '金牌托管管家', 'link' => 'yewu/tuoguan','param'=>''],
-                    ['name' => '轻应用联盟', 'link' => 'yewu/qyy','param'=>''],
                     //这个是外链
                     ['name' => '云服务平台', 'link' => 'http://yfw.weilaihexun.com/', 'out' => true],
 

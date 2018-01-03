@@ -33,6 +33,20 @@
 
 <div class="index_cp">
     <div class="index_cpxq">
+        <a href="{:url('yewu/qyy')}">
+            <dl class="bg3">
+                <dt><b>轻应用联盟</b><br/>
+                    小程序  公众号  微应用<br/>
+                    轻应用商店
+                    <br/>
+                    <i>打造移动互联网生态闭环</i>
+                </dt>
+                <dd>立即查看</dd>
+            </dl>
+        </a>
+        <span><a href="{:url('yewu/qyy')}">轻应用联盟</a></span>
+    </div>
+    <div class="index_cpxq">
         <a href="{:url('yewu/index')}">
             <dl class="bg1">
                 <dt><b>推手全案营销专家</b><br/>
@@ -58,20 +72,7 @@
         <span><a href="{:url('yewu/tuoguan')}">推手金牌托管管家</a></span>
     </div>
 
-    <div class="index_cpxq">
-        <a href="{:url('yewu/qyy')}">
-            <dl class="bg3">
-                <dt><b>轻应用联盟</b><br/>
-                    小程序  公众号  微应用<br/>
-                    轻应用商店
-                    <br/>
-                    <i>打造移动互联网生态闭环</i>
-                </dt>
-                <dd>立即查看</dd>
-            </dl>
-        </a>
-        <span><a href="{:url('yewu/qyy')}">轻应用联盟</a></span>
-    </div>
+
 </div>
 
 <!--标题-->
