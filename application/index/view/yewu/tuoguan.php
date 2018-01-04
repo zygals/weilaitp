@@ -1,6 +1,6 @@
 
 <DIV class="yxzj_tuishou">
-    <div class=""><a <?= \app\common\model\Ad::urlOpen($row_ad->url,$row_ad->new_window)?>><img src="__IMGURL__/{$row_ad->img}" alt="暂无图片" style="width:100%;" /></a></div>
+    <div class=""><a <?= \app\common\model\Ad::urlOpen($row_ad->url,$row_ad->new_window)?>><img src="__IMGURL__{$row_ad->img}" alt="暂无图片" style="width:100%;" /></a></div>
     <!--标题-->
     <div class="index_title">
         <dl>
