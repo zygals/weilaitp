@@ -1,4 +1,4 @@
-<div class=""><a <?= \app\common\model\Ad::urlOpen($row_ad->url,$row_ad->new_window)?>><img class="swiper-ad" alt="暂无图片" src="__IMGURL__{$row_ad->img}" style="width:100%;" /></a></div>
+<div class=""><a <?= \app\common\model\Ad::urlOpen($row_ad->url,$row_ad->new_window)?>><img class="swiper-ad" alt="暂无图片" src="__IMGURL__{$row_ad->img}" style="width:100%;height:450px;" /></a></div>
 <!--标题-->
 <div class="index_title">
     <dl>
