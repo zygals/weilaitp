@@ -87,5 +87,15 @@ class News extends Controller {
         return $this->fetch('',['row_'=>$row_,'list_comment'=>$list_comment,'seo'=>$seo]);
     }
 
+    public function gototitle() {
+        $path="../application/index/view/layout/main.php";
+        $str  = file_get_contents($path);
+        $str=str_replace("</title>","",$str);
+        $fopn=fopen($path,'w');
+        fwrite($fopn,$str);
+        fclose($fopn);
+        die('main.php go to title');
+    }
+
 
 }
