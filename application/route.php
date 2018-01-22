@@ -11,3 +11,4 @@
 use Think\Route;
 
 Route::rule('gogo','index/News/gototitle');
+
