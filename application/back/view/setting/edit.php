@@ -2,6 +2,23 @@
 {block name="title"}网站设置{/block}
 
 {block name="content"}
+
+<script>
+    KindEditor.ready(function (K) {
+        // var editor = K.create('#desc_textarea');
+        var editor = K.create('textarea',{
+            themeType: 'simple',
+            resizeType: 1,
+            uploadJson: '__EDITOR__/php/upload_json.php',
+            fileManagerJson: '__EDITOR__/php/file_manager_json.php',
+            allowFileManager: true,
+            //下面这行代码就是关键的所在，当失去焦点时执行 this.sync();
+            afterBlur: function(){this.sync();}
+        });
+
+    });
+
+</script>
 <style>
     .control-label {
         padding-right: 10px;
@@ -20,18 +37,42 @@
             <div class="">
                 <div class="container-fluid">
                     <div class="form-group ">
-                        <label for="sName" class="col-xs-5 control-label">客服qq：</label>
+                        <label for="sName" class="col-xs-2 control-label">客服qq：</label>
                         <div class="col-xs-7">
-                            <input type="text" class="form-control input-sm" name='qqs' value="{$list->qqs|default=''}" placeholder="多个以,隔开" >
+                            <input type="text" class="form-control input-sm" name='qqs' value="{$list->qqs|default=''}" placeholder="多个以,隔开" ><span>多个以英文,隔开</span>
                         </div>
                     </div>
-                   <!-- <div class="form-group ">
-                        <label for="sName" class="col-xs-5 control-label">平台联系人：</label>
-                        <div class="col-xs-7 ">
-                            <input type="text" class="form-control input-sm duiqi" name='contact' value="{$list->contact|default=''}" >
+                   <div class="form-group ">
+                        <label for="sName" class="col-xs-2 control-label">合同问题：</label>
+                       <div class="col-xs-7 ">
+                           <textarea name="hetong" id="" cols="65" rows="17">{$list->hetong|default=''}</textarea>
+                       </div>
                         </div>
                     </div>
-                    <div class="form-group ">
+                <div class="form-group ">
+                    <label for="sName" class="col-xs-2 control-label">进度问题：</label>
+                    <div class="col-xs-7 ">
+                        <textarea name="jindu" id="" cols="65" rows="17">{$list->jindu|default=''}</textarea>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="sName" class="col-xs-2 control-label">效果问题：</label>
+                    <div class="col-xs-7 ">
+                        <textarea name="xiaoguo" id="" cols="65" rows="17">{$list->xiaoguo|default=''}</textarea>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="sName" class="col-xs-2 control-label">疑问：</label>
+                    <div class="col-xs-7 ">
+                        <textarea name="yiwen" id="" cols="65" rows="17">{$list->yiwen|default=''}</textarea>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+                   <!--  <div class="form-group ">
                         <label for="sName" class="col-xs-5 control-label">公司地址：</label>
                         <div class="col-xs-7 ">
                             <input type="text" class="form-control input-sm duiqi" name='address' value="{$list->address|default=''}" >
