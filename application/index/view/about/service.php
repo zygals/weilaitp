@@ -17,35 +17,19 @@
     </div>
 
     <div id="con_one_1" class="kehulist">
-        <ul>
-            <li>
-
-            </li>
-        </ul>
+<?= $hetong->hetong ; ?>
     </div>
 
     <div id="con_one_2" style="display:none" class="kehulist">
-        <ul>
-            <li>
-
-            </li>
-        </ul>
+        <?= $hetong->jindu ; ?>
     </div>
 
     <div id="con_one_3" style="display:none" class="kehulist">
-        <ul>
-            <li>
-
-            </li>
-        </ul>
+        <?= $hetong->xiaoguo ; ?>
     </div>
 
     <div id="con_one_4" style="display:none" class="kehulist">
-        <ul>
-            <li>
-
-            </li>
-        </ul>
+        <?= $hetong->yiwen ; ?>
 
     </div>
 

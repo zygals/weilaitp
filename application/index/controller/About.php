@@ -5,6 +5,7 @@ namespace app\index\controller;
 use app\common\model\Ad;
 use app\common\model\Recruit;
 use app\common\model\SeoSet;
+use app\common\model\Setting;
 use think\Controller;
 use think\Request;
 
@@ -25,8 +26,8 @@ class About extends Controller
 
     public function service()
     {
-
-        return $this->fetch();
+        $setting = Setting::getSet();
+        return $this->fetch('',['hetong'=>$setting]);
     }
 
     public function law()
